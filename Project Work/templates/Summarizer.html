@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <nav class="navbar">
+
+            <ul class="container1">
+                <li class="rightitems" id="rightitem1"><img id="image1" src="../static/36119430-removebg-preview.png"
+                        alt="This is a Image2"></li>
+                <li class="rightitems" id="rightitem2">
+                    <h1>Text Summarizer</h1>
+                </li>
+            </ul>
+
+            <ul class="container2">
+                <li><a href="#" class="items" id="item1">Home</a></li>
+                <li><a href="#" class="items" id="item2">About Us</a></li>
+                <li><a href="#" class="items" id="item3">Services</a></li>
+                <li><a href="#" class="items" id="item4">Contact Us</a></li>
+            </ul>
+
+            <ul class="container3">
+                <li id="leftitem1"><span id="image2"><img src="../static/user.png" alt="This is a Image2"></span></li>
+                <li><a href="#" class="leftitems" id="leftitem2">Log in</a></li>
+                <li><a href="#" class="leftitems" id="leftitem3">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section1">
+            <h1>Welcome to Text Summarizer</h1>
+            <h3>Enter any news,blogs,articles to get a short summary</h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer1">
+
+            <form action="/analyze" method = "POST" class="footeritem1">
+                <span>Input Text-</span>
+                <textarea name="inputtext" id="inputtext1" cols="70" rows="27">{{original_text}}</textarea>
+                <button class="btn">Enter</button>
+            </form>
+
+            <div class="footeritem2">
+                <span>Output Text-</span>
+                <p>{{summary}}</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

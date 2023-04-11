@@ -1,0 +1,1 @@
+word_freq[word]=word_freq[word]/max_freq
